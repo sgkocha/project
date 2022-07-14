@@ -1,8 +1,10 @@
-* {
+*{
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: normal;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
 }
 .container {
   max-width: 1070px;
@@ -11,6 +13,11 @@
 .header, .footer {
   background-color: rgba(255, 113, 67, 0.27);
   padding: 38px 0 48px;
+}
+.header__flex, .footer__flex, .about{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .nav__li {
   display: inline-block;
@@ -50,7 +57,9 @@
   background: #f76563;
   transition: 500ms;
 }
-
+.about {
+  margin: 105px auto 85px;
+}
 .about__title {
   font-weight: 700;
   font-size: 80px;
@@ -86,4 +95,10 @@
 .button__transparent:hover{
     color: #a4a4cf;
     transition: 500ms;
+}
+.footer {
+  padding: 53px 0;
+}
+.footer__logo{
+  margin-left: -100px;
 }
